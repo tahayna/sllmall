@@ -1,7 +1,7 @@
 @php
     $generaleSetting = App\Models\GeneraleSetting::first();
 
-    $title = $generaleSetting?->title ?? config('app.name', 'ReadyEcommerce');
+    $title = $generaleSetting?->title ?? config('app.name', 'Sllmall');
     $favicon = $generaleSetting?->favicon ?? asset('assets/favicon.png');
 @endphp
 <!DOCTYPE html>
@@ -14,7 +14,7 @@
     <meta name="base-url" content="{{ url('/') }}">
     <meta name="app-url" content="{{ url('/') }}">
     <!-- description -->
-    <meta name="description" content="ecommerce website">
+    <meta name="description" content="Sllmall - Your Online Shopping Destination">
 
     <title>{{ $title }}</title>
     <link rel="shortcut icon" href="{{ $favicon }}" type="image/x-icon">

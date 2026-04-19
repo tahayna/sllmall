@@ -16,11 +16,11 @@
     <link rel="shortcut icon" type="image/png" href="{{ $generaleSetting?->favicon ?? asset('assets/favicon.png') }}" />
 
     <!-- App title -->
-    <title>{{ $generaleSetting?->title ?? config('app.name', 'ReadyEcommerce') }} Shop Login</title>
+    <title>{{ $generaleSetting?->title ?? config('app.name', 'Sllmall') }} Shop Login</title>
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="description"
-        content="{{ $generaleSetting?->name ?? config('app.name', 'ReadyEcommerce') }} shop pannel login">
+        content="{{ $generaleSetting?->name ?? config('app.name', 'Sllmall') }} shop pannel login">
 
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
