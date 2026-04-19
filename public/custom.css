@@ -1,0 +1,4 @@
+/* Hide AboutSupport section */
+div.rounded-xl.shadow-lg.border.border-dashed.border-slate-300 {
+  display: none !important;
+}

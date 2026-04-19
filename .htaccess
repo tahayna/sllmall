@@ -1,0 +1,39 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^(www\.)?sllmall\.ps$ [NC]
+RewriteRule ^(.*)$ https://sllmall.com/$1 [L,R=301]
+
+<IfModule mod_rewrite.c>
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+<Files .env>
+Order allow,deny
+Deny from all
+</Files>
+
+<Files composer.json>
+Order allow,deny
+Deny from all
+</Files>
+
+# <IfModule mod_rewrite.c>
+#     RewriteEngine on
+#     RewriteCond %{REQUEST_FILENAME} !-f
+#     RewriteRule ^(.*)$ public/$1 [L]
+#   </IfModule>
+
+#   <Files .env>
+#     Order allow,deny
+#     Deny from all
+#   </Files>
+
+#   <Files composer.json>
+#     Order allow,deny
+#     Deny from all
+#   </Files>
+# RewriteCond %{HTTP_HOST} ^sllmall\.ps$ [OR]
+# RewriteCond %{HTTP_HOST} ^www\.sllmall\.ps$
+# RewriteRule ^/?$ "https\:\/\/sllmall\.com\/" [R=301,L]
+
